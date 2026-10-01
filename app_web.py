@@ -28,7 +28,7 @@ if not st.session_state.logado:
     with col_l2:
         with st.form("form_login", clear_on_submit=True):
             user_input = st.text_input("Usuário / Login:")
-            pass_input = st.text_input("Senha do Módulo:", show="*")
+            pass_input = st.text_input("Senha do Módulo:", type="*")
             botao_acessar = st.form_submit_button("ACESSAR SISTEMA", use_container_width=True)
             
             if botao_acessar:
